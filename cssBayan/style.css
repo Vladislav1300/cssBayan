@@ -15,7 +15,8 @@ li {
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 20px;
+    /* margin: 0 10px; */
+    /* padding: 0 20px; */
 
     max-width: 1200px;
     width: 100%;
@@ -24,6 +25,7 @@ li {
 
 .main__title {
     margin-top: 40px;
+    margin: 0 15px;
 
     font-family: 'Tilt Warp', cursive;
     font-size: 32px;
@@ -34,7 +36,6 @@ li {
 }
 
 .memes__title {
-
     font-family: 'Tilt Warp', cursive;
     font-size: 24px;
     font-weight: 600;
@@ -65,12 +66,16 @@ li {
     appearance: none;
 }
 .memes__header {
+    margin: 0 10px;
+
     height: 50px;
     display: block;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    color: rgb(16, 16, 172);
 }
 .memes__footer {
     height: 0;
@@ -111,6 +116,9 @@ li {
 .memes__item:hover > .memes__header > .close {
     display: block;
 }
+.memes__list:hover .memes__header {
+    color: black;
+}
 
 .memes__item:hover > .memes__footer {
     height: 400px;
@@ -127,7 +135,7 @@ li {
 }
 
 .memes__input:checked ~ .memes__header > .memes__title {
-    color: rgb(16, 16, 172);
+    color: black;
 }
 
 
