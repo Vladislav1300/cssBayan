@@ -203,12 +203,7 @@ a:-webkit-any-link {
 
 
 /* ----------------media----------------------- */
-@media screen and (min-width: 1200px){
-    .memes__item:active {
-        opacity: 0.3;
-        transition: 0.2s;
-
-    }
+@media (hover: hover) {
     .memes__list:hover .arrow {
         display: block;
     }
@@ -225,6 +220,14 @@ a:-webkit-any-link {
     
     .memes__item:hover > .memes__footer {
         height: 35rem;
+    }
+  }
+
+@media screen and (min-width: 1200px){
+    .memes__item:active {
+        opacity: 0.3;
+        transition: 0.2s;
+
     }
 }
 
