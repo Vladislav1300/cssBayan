@@ -187,7 +187,10 @@ a:-webkit-any-link {
     display: none;
 }
 .close {
-    display: none;
+   display: none; 
+}
+.material-symbols-outlined {
+    transition: linear 1s;
 }
 
 /* --------------------end main---------------- */
@@ -203,12 +206,7 @@ a:-webkit-any-link {
 
 
 /* ----------------media----------------------- */
-@media screen and (min-width: 1200px){
-    .memes__item:active {
-        opacity: 0.3;
-        transition: 0.2s;
-
-    }
+@media (hover: hover) {
     .memes__list:hover .arrow {
         display: block;
     }
@@ -226,11 +224,19 @@ a:-webkit-any-link {
     .memes__item:hover > .memes__footer {
         height: 35rem;
     }
+  }
+
+@media screen and (min-width: 1200px){
+    .memes__item:active {
+        opacity: 0.3;
+        transition: 0.2s;
+
+    }
 }
 
 @media screen and (max-width: 568px){
     html {
-        font-size: 8px;
+        font-size: 0.6em;
     }
     .header {
         flex-wrap: wrap;
@@ -242,7 +248,7 @@ a:-webkit-any-link {
 }
 @media screen and (max-width: 320px){
     html {
-        font-size: 6px;
+        font-size: 0.4em;
     }
     
 }
